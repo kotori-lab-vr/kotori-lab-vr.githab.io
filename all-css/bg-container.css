@@ -1,0 +1,701 @@
+.bg-container-1 {
+    width: 100%;
+    height: 100%;
+    --c1: #ffffff;
+    --c2: #00ffff41;
+    --c3: #f0a61100;
+    background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        var(--c1) 23.5%,
+        var(--c3) 0
+        )
+        21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        var(--c2) 24%,
+        var(--c3) 0
+        )
+        19px 30px,
+    linear-gradient(
+        var(--c1) 14%,
+        var(--c3) 0,
+        var(--c3) 85%,
+        var(--c1) 0
+        )
+        0 0,
+    linear-gradient(
+        150deg,
+        var(--c1) 24%,
+        var(--c2) 0,
+        var(--c2) 26%,
+        var(--c3) 0,
+        var(--c3) 74%,
+        var(--c2) 0,
+        var(--c2) 76%,
+        var(--c1) 0
+        )
+        0 0,
+    linear-gradient(
+        30deg,
+        var(--c1) 24%,
+        var(--c2) 0,
+        var(--c2) 26%,
+        var(--c3) 0,
+        var(--c3) 74%,
+        var(--c2) 0,
+        var(--c2) 76%,
+        var(--c1) 0
+        )
+        0 0,
+    linear-gradient(90deg, var(--c2) 2%, var(--c1) 0, var(--c1) 98%, var(--c2) 0%) 0 0 var(--c1);
+    background-size: 40px 60px;
+}
+
+.bg-container-2 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        #3498db,
+        #2ecc71
+    );
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-container-2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.bg-container-3 {
+    width: 100%;
+    height: 100%;
+    --c1: #aefaff;
+    --c2: #ffffff;
+    background: repeating-linear-gradient(135deg, var(--c1),var(--c1) 40px, var(--c2) 20px,var(--c2) 80px);
+}
+
+.bg-container-4 {
+    width: 100%;
+    height: 100%;
+    --c1: #ecf6ff;
+    --c2: #99f7ffbd;
+    background-color: var(--c1);
+    background-image: linear-gradient(
+        32deg,
+        var(--c2) 30px,
+        transparent
+    );
+    background-size: 60px 60px;
+    background-position: -5px -5px;
+}
+
+.bg-container-5 {
+    width: 100%;
+    height: 100%;
+    --c1: #ffffff;
+    --c2: #0051ff2c;
+    background-color: var(--c1);
+    background-image: radial-gradient(var(--c2) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+
+.bg-container-6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --c1: #ffffff;
+    --c2: #cff6ff;
+
+    background: var(--c1);
+    background: linear-gradient(
+        135deg,
+        var(--c1) 25%,
+        var(--c2) 25%,
+        var(--c2) 50%,
+        var(--c1) 50%,
+        var(--c1) 75%,
+        var(--c2) 75%,
+        var(--c2)
+    );
+    background-size: 40px 40px;
+
+    /* Animation */
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
+.bg-container-7 {
+    width: 100%;
+    height: 100%;
+    --c1: radial-gradient(#a8e9ff 5%, #ffffff00 6%);
+    --size: 3rem;
+    background-image: var(--c1),
+    var(--c1);
+    background-position: 0 0, calc(var(--size) / 2) calc(var(--size) / 2);
+    background-size: var(--size) var(--size);
+    background-color: #ffffff;
+}
+
+.bg-container-8 {
+    width: 100%;
+    height: 100%;
+    --s: 37px; /* control the size */
+    --c1: #ffffff;
+    --c2: #dbfafa;
+    --c: #ffffff00, var(--c1) 0.5deg 119.5deg, #ffffff00 120deg;;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+        var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+        var(--g3) 0 calc(1.73 * var(--s)) var(--c2);
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+}
+
+.bg-container-9 {
+    width: 100%;
+    height: 100%;
+    --s: 200px; /* control the size */
+    --cf: #fff;
+    --c1: #cfdcff; /* control the color */
+    --c2: color-mix(in srgb, var(--c1)  100%, var(--cf) 100%);
+    --c3: color-mix(in srgb, var(--c1)  100%, var(--cf) 50%);
+
+    background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+        repeating-conic-gradient(
+            from 30deg,
+            var(--c1) 0 60deg,
+            var(--c2) 0 120deg,
+            var(--c3) 0 180deg
+        );
+    background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+.bg-container-10 {
+    width: 100%;
+    height: 100%;
+    --s: 60px;
+    --c1: #cfdcff;
+    /* Add your background pattern here */
+    background-image: radial-gradient(rgb(255, 255, 255) 30%, transparent 90%),
+    linear-gradient(45deg, var(--c1), var(--c1), var(--c1));
+    background-size: var(--s) var(--s);
+    /* background: lightblue; */
+}
+
+.bg-container-11 {
+    width: 100%;
+    height: 100%;
+    --s: 60px;
+    --c1: #cfdcff;
+    /* Add your background pattern here */
+    background-image: radial-gradient(rgb(255, 255, 255) 86%, transparent 99%),
+    linear-gradient(45deg, var(--c1), var(--c1), var(--c1));
+    background-size: var(--s) var(--s);
+    /* background: lightblue; */
+}
+
+.bg-container-12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: radial-gradient(#eee 12%, transparent 0), radial-gradient(#eee 12%, transparent 0);
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+}
+
+.bg-container-13 {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    background-color: #93e7ff;
+}
+
+.bg-container-13:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: radial-gradient(rgba(0, 0, 0, .35) 35%, transparent 0), radial-gradient(rgba(0, 0, 0, .35) 35%, transparent 0);
+    background-position: 0 0, 6px 6px;
+    background-size: 12px 12px;
+    mix-blend-mode: overlay;
+}
+
+.bg-container-img {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url(/img/bg-pt.png);
+    z-index: -1;
+    background-size: 50px; /*粗さ*/
+    background-color: #fff;
+}
+
+.bg-container-img2 {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url(/img/bg-pt-blue.png);
+    z-index: -1;
+    background-size: 50px; /*粗さ*/
+    background-color: #fff;
+}
+
+.bg-container-img3 {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url(/img/bg-img.png);
+    z-index: -1;
+    background-size: 50px; /*粗さ*/
+    background-color: #fff;
+}
+
+.bg-container-img4 {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url(/img/bg-pt2.png);
+    z-index: -1;
+    background-size: 50px; /*粗さ*/
+    background-color: #fff;
+}
+
+.bg-container-img5 {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url(/img/bg-pt2.png),url(/img/bg-img.png);
+    z-index: -1;
+    background-size: 50px; /*粗さ*/
+    background-color: #fff;
+}
+
+.bg-container-img6 {
+    padding: 100px 0;
+    background-image: url(/img/bg_gray.jpg);
+    background-repeat: repeat;
+    background-size: 400px 400px;
+}
+
+.bg-container-img7 {
+    position: relative;
+    background-color: #000000;
+}
+
+.bg-container-img7:before {
+    display: block;
+    pointer-events: none;
+    content: "";
+    background-image: url(/img/bg-ptn.png);
+    background-position: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-container-img8 {
+    --m: 10px;
+    --c: #0d0d0d;
+    background-color: var(--c);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ptn.png);
+    background-size: 8px 8px;
+    background-repeat: repeat;
+    border: 1px solid var(--c);
+    pointer-events: none;
+}
+
+.bg-container-img9 {
+    --m: 10px;
+    --c: #000000;
+    background-color: var(--c);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/scanline.png);
+    background-size: 8px 8px;
+    background-repeat: repeat;
+    border: 1px solid var(--c);
+    pointer-events: none;
+}
+
+
+/*mask*/
+
+.bg-mask {
+    margin: 20px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    --url: url(/img/mask-1.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    -webkit-mask-size: 100px 100px;
+    mask-size: 100px 100px;
+}
+
+.mask-1 {
+    height: 100%;
+    --url: url(/img/mask-1.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-2 {
+    height: 100%;
+    --url: url(/img/mask-2.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-3 {
+    height: 100%;
+    --url: url(/img/mask-3.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-4 {
+    height: 100%;
+    --url: url(/img/mask-4.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-5 {
+    height: 100%;
+    --url: url(/img/mask-5.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-6 {
+    height: 100%;
+    --url: url(/img/mask-6.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-7 {
+    height: 100%;
+    --url: url(/img/mask-7.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-8 {
+    height: 100%;
+    --url: url(/img/mask-8.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-9 {
+    height: 100%;
+    --url: url(/img/mask-9.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-10 {
+    height: 100%;
+    --url: url(/img/mask-10.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-11 {
+    height: 100%;
+    --url: url(/img/mask-11.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-12 {
+    height: 100%;
+    --url: url(/img/mask-12.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-13 {
+    height: 100%;
+    --url: url(/img/mask-13.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-14 {
+    height: 100%;
+    --url: url(/img/mask-14.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-15 {
+    height: 100%;
+    --url: url(/img/mask-15.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-16 {
+    height: 100%;
+    --url: url(/img/mask-16.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-17 {
+    height: 100%;
+    --url: url(/img/mask-17.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-18 {
+    height: 100%;
+    --url: url(/img/mask-18.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-19 {
+    height: 100%;
+    --url: url(/img/mask-19.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-20 {
+    height: 100%;
+    --url: url(/img/mask-20.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-21 {
+    height: 100%;
+    --url: url(/img/mask-21.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-22 {
+    height: 100%;
+    --url: url(/img/mask-22.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-23 {
+    height: 100%;
+    --url: url(/img/mask-23.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-24 {
+    height: 100%;
+    --url: url(/img/mask-24.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-25 {
+    height: 100%;
+    --url: url(/img/mask-25.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-26 {
+    height: 100%;
+    --url: url(/img/mask-20.png),url(/img/mask-26.png),url(/img/mask-27.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-27 {
+    height: 100%;
+    --url: url(/img/mask-14.png),url(/img/mask-15.png),url(/img/mask-13.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-28 {
+    height: 100%;
+    --url: url(/img/mask-13.png),url(/img/mask-25.png),url(/img/mask-26.png),url(/img/mask-27.png),url(/img/mask-28.png),url(/img/mask-29.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+.mask-29 {
+    height: 100%;
+    --url: url(/img/mask-22.png),url(/img/mask-20.png);
+    -webkit-mask-image: var(--url);
+    mask-image: var(--url);
+    -webkit-mask-repeat: space;
+    mask-repeat: space;
+    mask-size: 100% 100%;
+    aspect-ratio: 1/1;
+}
+
+
+

@@ -1,0 +1,445 @@
+/*button1*/
+
+.button {
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    width: clamp(50px, 20vw, 230px);
+    height: clamp(50px, 20vw, 230px);
+    aspect-ratio: 1;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgb(0 0 0 / 24%);
+}
+
+@media (any-hover: hover) {
+.button {
+    transition: box-shadow 0.2s;
+}
+
+.button:hover {
+    box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgb(0 0 0 / 24%);
+}
+
+.button:active {
+    background-color: #ebebeb;
+    box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
+}
+}
+
+/*button1*/
+/*button2*/
+
+.btn-02 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: clamp(6px, 4vw/1.6, 30px);
+    font-weight: 600;
+    padding: clamp(4px, 2vw, 25px);
+    width: clamp(30px, 20vw, 230px);
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-02 span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn-02 span:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.btn-02:hover span {
+padding-right: 25px;
+}
+
+.btn-02:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+.btn-02:active {
+background-color: #ebebeb;
+box-shadow: inset 4px 4px 8px rgb(0 0 0 / 16%);
+}
+
+/*button2*/
+/*ssssssssssssssssssssssssssssssssssssssss*/
+/*:div:sssssssssssssssssssssssssssssssssss*/
+/*ssssssssssssssssssssssssssssssssssssssss*/
+
+/*body {
+    background: linear-gradient(135deg, #55efcb 0%, #1e5799 0%, #55efcb 0%, #5bcaff 100%);
+    color: #f7f7f7;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 60vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}*/
+
+/*==//////////////////////////////////////*/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 60vw;
+    max-width: 1200px;
+}
+.btn-s {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.btn-s:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7;
+}
+.btn-s:hover {
+    cursor: pointer;
+    color: #5bcaff;
+}
+.btn-s:hover:after {
+    width: 100%;
+    left: 0;
+}
+.btn-s span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.btn-s span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-s:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*==//////////////////////////////////////*/
+
+/*s1/////////////////////////////////////*/
+
+.btn-s1:after {
+    left: 0;
+}
+
+/*s1/////////////////////////////////////*/
+/*s2/////////////////////////////////////*/
+
+.btn-s2 {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.btn-s2:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7;
+    right: 0;
+    left: auto;
+}
+
+/*s2/////////////////////////////////////*/
+/*s3/////////////////////////////////////*/
+
+.btn-s3:after {
+    left: 0;
+    bottom: auto;
+    top: -3px;
+    width: 100%;
+}
+.btn-s3:hover::after {
+    top: calc(100% - 3px);
+}
+
+/*s3/////////////////////////////////////*/
+/*s4/////////////////////////////////////*/
+
+.btn-s4:after {
+    height: 140%;
+    left: -10%;
+    transform: skewX(15deg);
+    z-index: -1;
+}
+.btn-s4:hover::after {
+    left: -10%;
+    width: 120%;
+}
+
+/*in-img適応不可*/
+
+/*s4/////////////////////////////////////*/
+/*s5/////////////////////////////////////*/
+
+.btn-s5:hover {
+    border-radius: 30px;
+}
+.btn-s5:hover::after {
+    width: 0%;
+}
+
+/*s5/////////////////////////////////////*/
+/*s6/////////////////////////////////////*/
+
+.btn-s6:hover {
+    transform: scale(1.2);
+}
+.btn-s6:hover:after {
+    width: 0%;
+}
+
+/*s6/////////////////////////////////////*/
+/*s7/////////////////////////////////////*/
+
+.btn-s7:hover {
+    transform: scale(.8);
+}
+.btn-s7:hover:after {
+    width: 0%;
+}
+
+/*s7/////////////////////////////////////*/
+/*s8/////////////////////////////////////*/
+
+.btn-s8:hover {
+    box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+}
+.btn-s8:hover::after {
+    width: 0%;
+}
+
+/*s8/////////////////////////////////////*/
+/*s9/////////////////////////////////////*/
+
+.btn-s9:hover {
+    box-shadow: 0px 0px 0px 3px #f7f7f7;
+}
+.btn-s9:hover::after {
+    width: 0%;
+}
+
+/*s9/////////////////////////////////////*/
+/*s10/////////////////////////////////////*/
+
+.btn-s10 {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.btn-s10:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 100%;
+    background: #ffffff00;
+    right: 0;
+    left: auto;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+/*s10/////////////////////////////////////*/
+/*s11/////////////////////////////////////*/
+
+.btn-s11 {
+    flex: 1 1 auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+}
+.btn-s11:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7;
+}
+.btn-s11:hover {
+    cursor: pointer;
+    color: #5bcaff;
+}
+.btn-s11:hover:after {
+    width: 100%;
+    left: 0;
+}
+.btn-s11 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.btn-s11 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-s11:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn-s11:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 100%;
+    background: #ffffff00;
+    right: 0;
+    left: auto;
+    z-index: -1;
+    backdrop-filter: blur(15px) saturate(300%);
+    background-color: #ffffff25;
+}
+
+/*s11/////////////////////////////////////*/
+/*s11-2/////////////////////////////////////*/
+
+.btn-s11-2 {
+    flex: 1 1 auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 2px solid #f7f7f7;
+    text-align: center;
+}
+.btn-s11-2:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7;
+}
+.btn-s11-2:hover {
+    cursor: pointer;
+    color: #5bcaff;
+}
+.btn-s11-2:hover:after {
+    width: 100%;
+    left: 0;
+}
+.btn-s11-2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.btn-s11-2 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-s11-2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn-s11-2:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 100%;
+    background: #ffffff00;
+    right: 0;
+    left: auto;
+    filter: blur(15px) saturate(300%);
+    background-color: #ffffff25;
+    background-image: url(../img/tx2.avif);
+    background-size: cover;
+    background-position: 0; /*画像の位置調整*/
+    background-color: #fff; /*位置調整で足りなくなった時用*/
+    background-repeat: no-repeat;
+    min-height: 5vh;
+    flex-direction: column;
+    z-index: 10;
+}
+
+/*s11-2/////////////////////////////////////*/
+
+/*ssssssssssssssssssssssssssssssssssssssss*/
+/*ssssssssssssssssssssssssssssssssssssssss*/
+/*ssssssssssssssssssssssssssssssssssssssss*/

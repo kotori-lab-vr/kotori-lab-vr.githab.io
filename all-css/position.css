@@ -1,0 +1,14 @@
+.df {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
+}
+.ps{
+    position: sticky;
+}
